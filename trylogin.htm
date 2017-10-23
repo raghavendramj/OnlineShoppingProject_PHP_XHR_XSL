@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login  Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="login.htm">Buy Online</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="login.htm">Home</a></li>
+      <li><a href="buyonline.htm">View Shopping Catalog</a></li>
+      <li><a href="login.htm">Customer Login</a></li>
+      <li><a href="mlogin.htm">Store Manager Login </a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="tryregister.htm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="trylogin.htm"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <form name="loginForm">
+		<section id="container" style="width: 100%">
+			<article id="space" style="width: 10%; float: left;"></article>
+			<article id="fieldset" style="width: 100%;">
+
+				<table class="legend">
+					<tr>
+						<td align="right">To register a new account with Buy Online,
+							please complete the registration form below. To Register 
+						<td align="left"><strong><a href="register.htm" style="color: red; padding-left : 8px;width: 80px"> click here </a></strong></td>
+					</tr>
+				</table>
+				<br> <br>
+				<fieldset class="fields" style="width: 50%;">
+						<div class="row">
+							<div class="form_bg">
+									<h2 class="text-center">Customer Login</h2>
+									<br />
+									<div class="form-group">
+										<input type="email" class="form-control" id="email" placeholder="Customer Email Id" required>
+									</div>
+									<div class="form-group">
+										<input type="password" class="form-control" id="password" placeholder="Customer Password" required>
+									</div>
+									<div class="align-center">
+										<button type="button" class="btn btn-default" id="login" onclick="customerLogin()">Login</button>
+										<button type="reset" class="btn btn-default">Reset </button>
+									</div>
+							</div>
+						</div>
+				</fieldset>
+				<span id="spanxhr"></span>
+			</article>
+		</section>
+	</form>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Listing Goods</title>
+	<script type="text/javascript" src="js/buyonlineutil.js"></script>
+	<script type="text/javascript" src="js/listing.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="home.htm">Buy Online</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="home.htm">Site Map</a></li>
+		      <li id="processing"><a href="processing.htm">Processing </a></li>
+		      <li id="listing" class="active"><a href="listing.htm">Listing </a></li>
+		      <li class="active"><a href="buyonline.htm">Shopping Catalog</a></li>
+		      <li><a href="logout.htm">Logout </a></li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class="container">
+		<form id="listingForm">
+		<fieldset class="fields" style="width: 50%;">
+		  <div class="table-responsive">  
+			<table class="table table-bordered table-hover">
+						<tr>
+							<td>Item Name <font color="red">*</font></td>
+							<td><input type="text" name="itemname" id="itemname" class="form-control" required/>
+							</td>
+						</tr>
+						<tr>
+							<td>Item Price <font color="red">*</font>
+							</td>
+							<td>
+								<input type="number" name="itemprice" id="itemprice" class="form-control" required/> 
+							</td>
+						</tr>
+						<tr>
+							<td>Item Quantity <font color="red">*</font>
+							</td>
+							<td>
+								<input type="number" name="itemquantity" id="itemquantity" class="form-control" required/> 
+							</td>
+						</tr>
+						<tr>
+							<td>Description <font color="red">*</font> </td>
+							<td><textarea name="description" id="description" class="form-control" ></textarea></td>
+						</tr>
+						<tr>
+						<td></td>
+							<td>
+								<input type="button" id="listing" value="Add Item" onclick="addItemToGoodsList()"> 
+								<input type="reset" id="reset" value="Reset">
+							</td>
+						</tr>
+					</table>
+					</div>
+		</fieldset>
+		</form>
+		</div>
+	 	<div id="targetDiv" class="data"></div>
+	</body>
+</html>
